@@ -4,7 +4,6 @@ import { SiSolana } from "react-icons/si";
 // import { Connection, PublicKey, LAMPORTS_PER_SOL, clusterApiUrl } from "@solana/web3.js";
 
 const AirdropForm = () => {
-  const [tokenAddress, setTokenAddress] = useState("");
   const [amount, setAmount] = useState("");
   const [wallets, setWallets] = useState("");
   const [successMessage, setSuccessMessage] = useState("");
@@ -21,14 +20,7 @@ const AirdropForm = () => {
      </div>  
     <h1 className='font-bold text-xl w-[60%] sm:text-2xl text-center mt-5'>Instant Solana Test SOL Airdrop for Developers</h1>
     <div className='flex justify-center items-center flex-col w-[80%] md:w-[50%] lg:w-[40%] xl:w-[30%] gap-5 p-12 rounded-xl border border-zinc-300'>
-      
-      <input
-        type="text"
-        placeholder="Token Address"
-        className='w-full px-3 py-1 bg-transparent border border-zinc-200'
-        value={tokenAddress}
-        onChange={(e) => setTokenAddress(e.target.value)}
-      />
+  
       <div className='w-full items-center flex gap-5'>
       <input
         type="number"

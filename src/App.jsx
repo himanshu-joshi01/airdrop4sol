@@ -10,7 +10,6 @@ const AirdropForm = () => {
   const [errorMessage, setErrorMessage] = useState("");
 
 
-
   return (
     
     <div className='flex flex-col gap-14 items-center bg-black text-white h-screen '>
